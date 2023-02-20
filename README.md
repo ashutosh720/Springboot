@@ -1,1 +1,1 @@
-Facing Errors in Ecommerce model ,pleae help
+Not able to get some endpoints in ecommerce application
