@@ -13,4 +13,4 @@ ArrayList
 
 
 # Project Summary:-
-ToDo  Application created in springboot with java  with mvc architecture for four different model with their Controller, Service and Entities Layer
+ToDo  Application created in springboot with java  with mvc architecture with different model with their Controller, Service and Entities Layer
