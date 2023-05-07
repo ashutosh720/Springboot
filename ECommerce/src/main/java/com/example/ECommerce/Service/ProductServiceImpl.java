@@ -28,4 +28,15 @@ public class ProductServiceImpl implements ProductService {
     public void deleteProductById(Integer productId) {
         productRepository.deleteById(productId);
     }
+    public List<Order> getOrdersByUserId(Long userId) {
+    return orderRepository.findByUserId(userId);
+}
+
+public List<Order> getOrdersByProductId(Long productId) {
+    return orderRepository.findByProductId(productId);
+}
+
+public List<Order> getOrdersByAddressId(Long addressId) {
+    return orderRepository.findByAddressId(addressId);
+}
 }
