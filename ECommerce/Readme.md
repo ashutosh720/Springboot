@@ -1,6 +1,6 @@
 Not able to get some endpoints in ecommerce application
 # Frameworks and Languages used-Springboot with required dependencies and Java for coding
-# H2 database used 
+# MYSQL database used 
 # APIs
 Users
 GET /users - Get all users
