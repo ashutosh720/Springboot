@@ -31,6 +31,11 @@ public class OrderServiceImpl implements OrderService {
     public Order getOrderById(Integer orderId) {
         return orderRepository.findById(orderId).get();
     }
+    
+     @Override
+    public List<Product> getProductsByCategory(String category) {
+        return productRepository.findByCategory(category);
+    }
 
     @Override
     public Order createOrder(Order order) {
