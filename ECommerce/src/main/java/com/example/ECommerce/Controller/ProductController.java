@@ -19,7 +19,10 @@ public class ProductController {
         return productService.getAllProducts();
     }
 
-
+      @GetMapping("/category")
+    public List<Product> getProductsByCategory(@RequestParam("category") String category) {
+        return productService.getProductsByCategory(category);
+    }
 
 
     @PostMapping("/add-product")
