@@ -24,6 +24,12 @@ public class eveController {
         return this.eveservice.getEvents();
 
     }
+    
+     @GetMapping
+    public List<Event> getAllEventsByDate(@RequestParam(name = "date") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date) {
+        return eventService.getAllEventsByDate(date);
+    }
+
 
 
     @PostMapping("/add-event")
