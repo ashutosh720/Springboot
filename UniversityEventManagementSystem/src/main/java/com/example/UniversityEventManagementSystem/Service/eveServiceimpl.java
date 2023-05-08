@@ -34,6 +34,10 @@ endTime*/
     public List<Event> getEvents() {
         return eventList;
     }
+    
+     public List<Event> getAllEventsByDate(LocalDate date) {
+        return eventRepository.findByDate(date);
+    }
 
     @Override
     public Event addEvent(Event eve) {
