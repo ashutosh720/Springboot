@@ -3,7 +3,7 @@
 # Tech Stack
 ## Spring Boot
 ## Spring MVC
-## H2 database
+## MySql database
 
 # Requirements
 ## IntelliJIDEA
