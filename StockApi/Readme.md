@@ -13,21 +13,20 @@
   Springboot 
   
 # Controllers
-StockController
-Endpoint: /stock
+## StockController
+   Endpoint: /stock
+   Description: REST controller for managing stocks.
 
-Description: REST controller for managing stocks.
+# Methods:
+ 
+## GET /type/{stockType}
+### Description: Retrieves stocks based on the specified stock type.
+### Parameters:
+### stockType - Path parameter specifying the stock type.
+### Returns: List of stocks matching the specified type.
 
-Methods:
 
-GET /type/{stockType}
-
-Description: Retrieves stocks based on the specified stock type.
-Parameters:
-stockType - Path parameter specifying the stock type.
-Returns: List of stocks matching the specified type.
-GET /abovePrice/price/{price}/lowerData/date/{date}
-
+## GET /abovePrice/price/{price}/lowerData/date/{date}
 Description: Retrieves stocks with a price above the specified price and a birth date lower than the specified date.
 Parameters:
 price - Path parameter specifying the price threshold.
