@@ -22,47 +22,54 @@
 ## GET /type/{stockType}
 ### Description: Retrieves stocks based on the specified stock type.
 ### Parameters:
-### stockType - Path parameter specifying the stock type.
+stockType - Path parameter specifying the stock type.
 ### Returns: List of stocks matching the specified type.
 
 
 ## GET /abovePrice/price/{price}/lowerData/date/{date}
-Description: Retrieves stocks with a price above the specified price and a birth date lower than the specified date.
-Parameters:
+### Description: Retrieves stocks with a price above the specified price and a birth date lower than the specified date.
+### Parameters:
 price - Path parameter specifying the price threshold.
 date - Path parameter specifying the date threshold.
-Returns: List of stocks meeting the criteria.
-GET /cap/{capPercentage}
+### Returns: List of stocks meeting the criteria.
 
-Description: Retrieves all stocks with a market capitalization above the specified percentage.
-Parameters:
+
+## GET /cap/{capPercentage}
+### Description: Retrieves all stocks with a market capitalization above the specified percentage.
+### Parameters: 
 capPercentage - Path parameter specifying the market capitalization percentage threshold.
 Returns: List of stocks with a market capitalization above the threshold.
-POST /
 
-Description: Inserts a list of stocks.
-Request Body: List of stocks to be inserted.
-Returns: A message indicating the success of the operation.
-PUT /marketCap/{marketCap}/id/{id}
+## POST /
+### Description: Inserts a list of stocks.
+### Request Body: List of stocks to be inserted.
+### Returns: A message indicating the success of the operation.
 
-Description: Updates the market capitalization of a stock with the specified ID.
-Parameters:
+## PUT /marketCap/{marketCap}/id/{id}
+### Description: Updates the market capitalization of a stock with the specified ID.
+### Parameters:
 marketCap - Path parameter specifying the new market capitalization.
 id - Path parameter specifying the ID of the stock to be updated.
-PUT /stock/type/id
 
-Description: Updates the type of a stock with the specified ID.
-Parameters:
+## PUT /stock/type/id
+### Description: Updates the type of a stock with the specified ID.
+### Parameters:
 stockType - Query parameter specifying the new stock type.
 id - Query parameter specifying the ID of the stock to be updated.
-PUT /stock/{id}
 
-Description: Updates the details of a stock with the specified ID.
-Parameters:
+## PUT /stock/{id}
+### Description: Updates the details of a stock with the specified ID.
+### Parameters:
 id - Path parameter specifying the ID of the stock to be updated.
 myStock - Request body containing the updated stock details.
-DELETE /ownerCount/{count}
 
-Description: Deletes stocks based on the specified owner count.
-Parameters:
+## DELETE /ownerCount/{count}
+### Description: Deletes stocks based on the specified owner count.
+### Parameters:
 count - Path parameter specifying the owner count threshold.
+
+# Data structure used -Arraylist
+Database Created In H2 Database
+
+# Project Summary:-
+The Spring Boot Stock App is a RESTful API application built using the Spring Boot framework. It provides endpoints for managing stocks and performing various operations on them. The application follows a controller-service architecture, where the controller classes handle incoming requests and delegate the business logic to the service classes.
